@@ -33,7 +33,7 @@
     "@mui/material": "^7.2.0",
     "@mui/system": "^7.2.0",
     "@mui/x-data-grid": "^8.7.0",
-    "@mui/x-date-pickers": "^8.7.0",
+    "@mui/x-date-pickers": "^8.23.0",
     "@mui/x-tree-view": "^8.7.0",
     "@types/uuid": "^10.0.0",
     "@xyflow/react": "^12.8.1",
