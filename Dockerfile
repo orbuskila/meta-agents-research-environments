@@ -16,7 +16,7 @@ COPY are/simulation/gui/client .
 RUN npm run build
 
 # Stage 2 - Python build
-FROM python:3.12.6-slim AS python-builder
+FROM python:3.14.3-slim AS python-builder
 # Install uv
 ENV PIP_ROOT_USER_ACTION=ignore
 RUN pip install uv
@@ -28,7 +28,7 @@ RUN rm -rf /app/are/simulation/gui/client
 RUN --mount=type=cache,target=/root/.cache/uv uv pip install --system -e .
 
 # Stage 3 - Final stage
-FROM python:3.12.6-slim
+FROM python:3.14.3-slim
 ARG SERVER_VERSION=unknown
 WORKDIR /app
 
