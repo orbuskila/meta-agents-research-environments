@@ -35,3 +35,5 @@ termcolor==2.5.0
 tqdm_joblib==0.0.4
 uvicorn==0.35.0
 wsproto==1.2.0
+cryptography>=46.0.5 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
